@@ -1,0 +1,72 @@
+/* ############# */
+/* CSS VARIABLES */
+/* ############# */
+
+* {
+    /* color palette */
+    --color-box: 242, 242, 242;
+    --alpha: 0.5;
+  
+    /* font families */
+    --main-font: 'Karla', sans-serif;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+
+  /* Center website */
+  #mainContent {
+    background: rgb(var(--color-box));
+    
+    /* fonts */
+    font-family: var(--main-font);
+    text-align: left;
+    padding: 40px;
+  }
+  
+  h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+  h3 {
+    position: relative;
+    bottom: 90px;
+    z-index: 3;
+    text-align: center;
+    background: rgb(var(--color-box));
+    color: black;
+    width: 70px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 0px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+/* background-color: white; */
+    font-family: var(--main-font);
+    padding: 10px;
+}
+

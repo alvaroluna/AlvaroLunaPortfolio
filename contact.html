@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- title on browser tab -->
+    <title>Alvaro Luna Portfolio</title>
+
+    <!-- google fonts api -->
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+
+    <!-- css style templates -->
+    <link href="assets/css/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- css style template overrides -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/contactFormStyle.css">
+</head>
+
+<body>
+
+    <div class="container-fluid" id="mainContainer">
+
+        <!--                -->
+        <!-- NAVIGATION BAR -->
+        <!--                -->
+        <div class="row" id="navigationBar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">Alvaro Luna</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!--                        -->
+        <!-- CONTACT FORM/CONTAINER -->
+        <!--                        -->
+        <div class="row" id="mainContent">
+            <!-- this row has columns of ratios of 3/12, 6/12, 3/12 -->
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="formContainer">
+                    <div>
+                        <h1>CONTACT</h1>
+                        <hr id="boxBreakLine">
+                    </div>
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="fullName" placeholder="Alvin Moon">
+
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="emailAddress" placeholder="example@gmail.com">
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:170px"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+
+        <!--        -->
+        <!-- FOOTER -->
+        <!--        -->
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <footer class="py-5 fixed-bottom">
+                    <div class="container">
+                        <p class="m-0 text-center small">Alvaro Luna 2020</p>
+                    </div>
+                </footer>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

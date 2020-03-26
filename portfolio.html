@@ -1,134 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=yes"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
     <!-- title on browser tab -->
     <title>Alvaro Luna Portfolio</title>
 
     <!-- google fonts api -->
-    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- css style templates -->
-    <link href="assets/css/reset.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="assets/css/reset.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
 
     <!-- css style template overrides -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/portfolioStyle.css">
-</head>
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/portfolioStyle.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="container-fluid" id="mainContainer">
+      <!--                -->
+      <!-- NAVIGATION BAR -->
+      <!--                -->
+      <div class="row" id="navigationBar">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">Alvaro Luna</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!--                -->
-        <!-- NAVIGATION BAR -->
-        <!--                -->
-        <div class="row" id="navigationBar">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#">Alvaro Luna</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Portfolio<span
-                                    class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-
-        <!--                     -->
-        <!-- PORTFOLIO CONTAINER -->
-        <!--                     -->
-        <div class="row" id="mainContent">
-            <!-- this row has columns of ratios of 3/12, 6/12, 3/12 -->
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-                <div class="main">
-                    <h1>PORTFOLIO</h1>
-                    <hr>
-                    <!-- Portfolio Gallery Grid -->
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="content">
-                                <img src="assets/images/Shiba0.jpg" alt="Mountains" style="width:100%">
-                                <h3>Project 0</h3>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="content">
-                                <img src="assets/images/Shiba1.jpg" alt="Lights" style="width:100%">
-                                <h3>Project 1</h3>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="content">
-                                <img src="assets/images/Shiba7.jpg" alt="Nature" style="width:100%">
-                                <h3>Project 2</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="content">
-                                <img src="assets/images/Shiba3.jpg" alt="Mountains" style="width:100%">
-                                <h3>Project 3</h3>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="col-md-4">
-                                <img src="assets/images/Shiba4.jpg" alt="Lights" style="width:100%">
-                                <h3>Project 4</h3>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="content">
-                                <img src="assets/images/Shiba6.jpg" alt="Nature" style="width:100%">
-                                <h3>Project 5</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html"
+                    >Portfolio<span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
             </div>
-            <div class="col-md-3"></div>
+          </nav>
         </div>
+        <div class="col-md-3"></div>
+      </div>
 
-        <!--        -->
-        <!-- FOOTER -->
-        <!--        -->
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <footer class="py-5 fixed-bottom">
-                    <div class="container">
-                        <p class="m-0 text-center small">Alvaro Luna 2020</p>
-                    </div>
-                </footer>
+      <!--                     -->
+      <!-- PORTFOLIO CONTAINER -->
+      <!--                     -->
+      <div class="row" id="mainContent">
+        <!-- this row has columns of ratios of 3/12, 6/12, 3/12 -->
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <div class="main">
+            <h1>PORTFOLIO</h1>
+            <hr />
+            <!-- Portfolio Gallery Grid -->
+
+            <!-- first row -->
+            <div class="row">
+              <div class="col-md-4">
+                <div class="content">
+                  <img
+                    src="assets/images/Shiba0.jpg"
+                    alt="Mountains"
+                    style="width:100%"
+                  />
+                  <a
+                    class="projectName"
+                    href="../3_WordGuessGame/WordGuessGame/index.html"
+                    >Kahn-man</a
+                  >
+                  <br />
+                  <a href="https://github.com/alvaroluna/WordGuessGame"
+                    >[...] - Github</a
+                  >
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="content">
+                  <img
+                    src="assets/images/Shiba1.jpg"
+                    alt="Lights"
+                    style="width:100%"
+                  />
+                  <a
+                    class="projectName"
+                    href="../5_TriviaGame/TriviaGame/index.html"
+                    >Seinfeld Trivia</a
+                  >
+                  <br />
+                  <a href="https://github.com/alvaroluna/TriviaGame"
+                    >[...] - Github</a
+                  >
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="content">
+                  <img
+                    src="assets/images/Shiba7.jpg"
+                    alt="Nature"
+                    style="width:100%"
+                  />
+                  <a
+                    class="projectName"
+                    href="../6_GifTastic/GifTastic/index.html"
+                    >Gif Tastic</a
+                  >
+                  <br />
+                  <a href="https://github.com/alvaroluna/GifTastic"
+                    >[...] - Github</a
+                  >
+                </div>
+              </div>
             </div>
-            <div class="col-md-4"></div>
-        </div>
 
+            <!-- 2nd row -->
+            <div class="row">
+              <div class="col-md-4">
+                <div class="content">
+                  <img
+                    src="assets/images/Shiba3.jpg"
+                    alt="Mountains"
+                    style="width:100%"
+                  />
+                  <a class="projectName" href="../unit-4-game/index.html"
+                    >Crystals Collector</a
+                  >
+                  <br />
+                  <a
+                    href="https://github.com/alvaroluna/unit-4-game/blob/master/index.html"
+                    >[...] - Github</a
+                  >
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="content">
+                  <img
+                    src="assets/images/Shiba6.jpg"
+                    alt="Nature"
+                    style="width:100%"
+                  />
+                  <a
+                    class="projectName"
+                    href="../7_TrainSchedule/TrainSchedulerBasic/index.html"
+                    >CTA Train Schedule</a
+                  >
+                  <br />
+                  <a href="https://github.com/alvaroluna/TrainSchedulerBasic"
+                    >[...] - Github</a
+                  >
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="content">
+                  <img
+                    src="assets/images/ShibaBlack.jpg"
+                    alt="Nature"
+                    style="width:100%"
+                  />
+                  <a class="projectName" href="../PROJECT1/Project-1/index.html"
+                    >It Is Your Birthday</a
+                  >
+                  <br />
+                  <a href="https://github.com/atrodondi/Project-1"
+                    >[...] - Github</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+
+      <!--        -->
+      <!-- FOOTER -->
+      <!--        -->
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <footer class="py-5 fixed-bottom">
+            <div class="container">
+              <p class="m-0 text-center small">
+                Alvaro Luna |
+                <a href="mailto:luna.alvaro3@gmail.com"
+                  >luna.alvaro3@gmail.com </a
+                >| 630 520 5943
+              </p>
+              <p>
+                <a href="https://github.com/alvaroluna">GitHub</a> |
+                <a href="https://www.linkedin.com/in/aalvarolunaa/">LinkedIn</a>
+                |
+                <a href="assets/pdf/Resume.pdf">Resume</a>
+              </p>
+            </div>
+          </footer>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>

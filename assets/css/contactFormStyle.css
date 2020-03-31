@@ -3,62 +3,56 @@
 /* ############# */
 
 * {
-    /* color palette */
-    --color-box: 242, 242, 242;
-    --alpha: 0.5;
+  /* color palette */
+  --color-box: 242, 242, 242;
+  --alpha: 0.5;
 
-    /* font families */
-    --main-font: 'Karla', sans-serif;
+  /* font families */
+  --main-font: "Karla", sans-serif;
 }
 
 /* ##################### */
 /* FORM                  */
 /* ##################### */
 * {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #contactTitle {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* Style the container/contact section */
 #mainContent {
-    font-family: var(--main-font);
-    border-radius: 0px;
-    background-color: rgb(var(--color-box));
-    padding: 10px;
+  font-family: var(--main-font);
+  border-radius: 0px;
+  background-color: rgb(var(--color-box));
+  padding: 10px;
 }
 
 /* Style inputs */
-input[type=text], select, textarea {
-    width: 400px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    resize: vertical;
+input[type="text"],
+select,
+textarea {
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  resize: vertical;
 }
 
 /* submit button */
-input[type=submit] {
-    background-color: black;
-    color: blue;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    margin-left: 20px;
-    width: 100px;
+input[type="submit"] {
+  background-color: black;
+  color: blue;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  width: 100px;
 }
-input[type=submit]:hover {
-    background-color: grey;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
+input[type="submit"]:hover {
+  background-color: grey;
 }

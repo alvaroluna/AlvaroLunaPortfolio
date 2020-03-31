@@ -12,16 +12,37 @@
   --alpha: 0.5;
 
   /* font families */
-  --main-font: "Karla", sans-serif;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Open Sans", sans-serif;
 }
 
 /*###############*/
 /* BODY SETTINGS */
 /*###############*/
 body {
-  /* background-image: linear-gradient(rgb(var(--bkgnd-gradTop)), rgb(var(--bkgnd-gradBtm)));
-    min-height: 1080px; */
   background-color: white;
+}
+
+/* ####################
+# TYPE FACES          #
+#                     #
+# Thin            100 #  
+# Extra Light     200 #
+# Light           300 #
+# Regular         400 #
+# Medium          500 #
+# Semi-Bold       600 #
+# Bold            700 #
+# Black           900 #
+#####################*/
+.primaryFont_Black {
+  font-family: var(--primary-font);
+  font-weight: 900;
+}
+
+.secondaryFont_Regular {
+  font-family: var(--secondary-font);
+  font-size: smaller;
 }
 
 /*################*/
@@ -34,7 +55,8 @@ body {
   text-align: center;
 }
 .nav-link {
-  font-family: var(--main-font);
+  font-family: var(--primary-font);
+  font-weight: bold;
   margin: 20px;
   width: 100px;
 }

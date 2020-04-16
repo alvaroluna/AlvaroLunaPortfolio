@@ -1,138 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=yes"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
 
-    <!-- title on browser tab -->
-    <title>Alvaro Luna Portfolio</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
-    <!-- google fonts api -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Karla&display=swap"
-      rel="stylesheet"
-    />
+  <!-- title on browser tab -->
+  <title>Alvaro Luna Portfolio</title>
 
-    <!-- css style templates -->
-    <link href="assets/css/reset.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
+  <!-- google fonts api -->
+  <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet" />
 
-    <!-- css style template overrides -->
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <link href="assets/css/aboutMeStyle.css" />
-  </head>
+  <!-- css style templates -->
+  <link href="assets/css/reset.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 
-  <body>
-    <div class="container-fluid" id="mainContainer">
-      <!--                -->
-      <!-- NAVIGATION BAR -->
-      <!--                -->
-      <div class="row" id="navigationBar">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">Alvaro Luna</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+  <!-- css style template overrides -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/portfolioStyle.css" />
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html"
-                    >About Me<span class="sr-only">(current)</span></a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-        <div class="col-md-3"></div>
+  <!-- full jquery inc. ajax -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+  <!-- bootstrap javascript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+  <div class="container-fluid" id="mainContainer">
+    <!--                -->
+    <!-- NAVIGATION BAR -->
+    <!--                -->
+    <div class="row" id="navigationBar">
+      <div class="col-md-3"></div>
+      <div class="col-md-6" id="insertNavBar">
+        <!-- NavBar.js -->
       </div>
+      <div class="col-md-3"></div>
+    </div>
 
-      <!--                    -->
-      <!-- ABOUT ME CONTAINER -->
-      <!--                    -->
-      <div class="row" id="mainContent">
-        <!-- this row has columns of ratios of 3/12, 6/12, 3/12 -->
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-          <div class="aboutContainer">
-            <h1>ABOUT ME</h1>
-            <hr />
+    <!--                    -->
+    <!-- ABOUT ME CONTAINER -->
+    <!--                    -->
+    <div class="row" id="mainContent">
+      <!-- this row has columns of ratios of 3/12, 6/12, 3/12 -->
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="aboutContainer">
+          <h1>ABOUT ME</h1>
+          <hr />
 
-            <div class="bioContents">
-              <img id="portrait" src="assets/images/Alvaro.png" />
-              <br />
-              <p1>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
-                dolorum labore voluptatibus, sunt consequuntur harum, iste
-                distinctio velit expedita vitae omnis quam odio blanditiis
-                eligendi. Voluptatem sapiente amet explicabo odit? Lorem ipsum
-                dolor, sit amet consectetur adipisicing elit. Iusto dolorum
-                labore voluptatibus, sunt consequuntur harum, iste distinctio
-                velit expedita vitae omnis quam odio blanditiis eligendi.
-                Voluptatem sapiente amet explicabo odit? Lorem ipsum dolor, sit
-                amet consectetur adipisicing elit. Iusto dolorum labore
-                voluptatibus, sunt consequuntur harum, iste distinctio velit
-                expedita vitae omnis quam odio blanditiis eligendi. Voluptatem
-                sapiente amet explicabo odit?
-              </p1>
-            </div>
+          <div class="bioContents">
+            <img id="portrait" src="assets/images/Alvaro.png" />
+            <br />
+            <p1>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
+              dolorum labore voluptatibus, sunt consequuntur harum, iste
+              distinctio velit expedita vitae omnis quam odio blanditiis
+              eligendi. Voluptatem sapiente amet explicabo odit? Lorem ipsum
+              dolor, sit amet consectetur adipisicing elit. Iusto dolorum
+              labore voluptatibus, sunt consequuntur harum, iste distinctio
+              velit expedita vitae omnis quam odio blanditiis eligendi.
+              Voluptatem sapiente amet explicabo odit? Lorem ipsum dolor, sit
+              amet consectetur adipisicing elit. Iusto dolorum labore
+              voluptatibus, sunt consequuntur harum, iste distinctio velit
+              expedita vitae omnis quam odio blanditiis eligendi. Voluptatem
+              sapiente amet explicabo odit?
+            </p1>
           </div>
         </div>
-        <div class="col-md-3"></div>
       </div>
-
-      <!--        -->
-      <!-- FOOTER -->
-      <!--        -->
-      <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-          <footer class="py-5 fixed-bottom">
-            <div class="container">
-              <p class="m-0 text-center small">
-                Alvaro Luna |
-                <a href="mailto:luna.alvaro3@gmail.com"
-                  >luna.alvaro3@gmail.com </a
-                >| 630 520 5943
-              </p>
-              <p>
-                <a href="https://github.com/alvaroluna">GitHub</a> |
-                <a href="https://www.linkedin.com/in/aalvarolunaa/">LinkedIn</a>
-                |
-                <a href="assets/pdf/Resume.pdf">Resume</a>
-              </p>
-            </div>
-          </footer>
-        </div>
-        <div class="col-md-3"></div>
-      </div>
+      <div class="col-md-3"></div>
     </div>
-  </body>
+
+    <!--        -->
+    <!-- FOOTER -->
+    <!--        -->
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6" id="insertFooter">
+        <footer class="py-5 fixed-bottom">
+          <div class="container">
+            <p class="m-0 text-center small" id="insertTopRowFooter">
+              <!-- top row links -->
+            </p>
+            <p class="m-0 text-center small" id="insertBtmRowFooter">
+              <!-- bottom row links -->
+            </p>
+          </div>
+        </footer>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+
+  <!-- javascript -->
+  <script type="text/javascript" src="assets/js/NavBar.js"></script>
+  <script type="text/javascript" src="assets/js/Footer.js"></script>
+</body>
+
 </html>

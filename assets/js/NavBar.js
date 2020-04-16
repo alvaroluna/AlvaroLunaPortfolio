@@ -1,3 +1,19 @@
+//////////////////////
+// HELPER FUNCTIONS //
+//////////////////////
+
+function ChangeActiveState(htmlTag) {
+    $(".nav .nav-link").on("click", function () {
+        $(".nav").find(".active").removeClass("active");
+        $(this).addClass("active");
+    });
+}
+
+
+//////////////////////////////
+// MAIN NAVIGATION FUNCTION //
+//////////////////////////////
+
 function NavigationBar() {
     //////////////////
     // NAV BAR DATA //
@@ -64,21 +80,31 @@ function NavigationBar() {
         console.log(navLinksObj[key].text);
 
         var listItemTag = $("<li>");
-        listItemTag.addClass("nav-item active");
+        listItemTag.addClass("nav-item");
 
         var aTag = $("<a>");
         aTag.addClass("nav-link");
+
+        if (navLinksObj[key].url === "portfolio.html") {
+            // highlight active page
+            aTag.addClass("active");
+
+            // also underline text
+            // aTag.attr("style", "background-size: 1px 4em;box-shadow:inset 0 -0.175em white,inset 0 -0.2em #000;")
+            // aTag.attr("style", "background: rgb(var(--bkgnd-gradTop));")
+            aTag.attr("style", "background: yellow;")
+        }
+
+
         aTag.attr("href", navLinksObj[key].url);
         aTag.text(navLinksObj[key].text);
 
-        if (navLinksObj[key].url === "portfolio.html") {
-            var aEmbeddedSpanTag = $("<span>");
-            aEmbeddedSpanTag.addClass("sr-only");
-            aEmbeddedSpanTag.text("(current)");
+        var aEmbeddedSpanTag = $("<span>");
+        aEmbeddedSpanTag.addClass("sr-only");
+        aEmbeddedSpanTag.text("(current)");
 
-            // append <span> tag to <a> tag
-            aTag.append(aEmbeddedSpanTag);
-        }
+        // append <span> tag to <a> tag
+        aTag.append(aEmbeddedSpanTag);
 
         // append <a> tag to <li> tag
         listItemTag.append(aTag);
@@ -107,6 +133,7 @@ function NavigationBar() {
     $("#insertNavBar").append(navTag);
 }
 
+// PROGRAM ENTRY POINT
 NavigationBar();
 
 

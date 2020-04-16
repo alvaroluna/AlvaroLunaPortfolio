@@ -8,13 +8,9 @@ function Footer() {
     divTag.addClass("container");
 
     // first <p> tag
-    var pTopTag = $("<p>");
-    pTopTag.addClass("m-0 text-center small");
-    pTopTag.attr("id", "insertTopRowFooter");
-
-    var pBtmTag = $("<p>");
-    pBtmTag.addClass("m-0 text-center small");
-    pBtmTag.attr("id", "insertBtmRowFooter");
+    var pTag = $("<p>");
+    pTag.addClass("m-0 text-center");
+    pTag.attr("id", "insertTopRowFooter");
 
 
     // data to populate <a> tags
@@ -27,13 +23,10 @@ function Footer() {
             href: "mailto:luna.alvaro3@gmail.com",
         },
         phoneNumber: {
-            text: " 630 520 5943"
-        }
-    };
-
-    var footerData2 = {
+            text: " 630 520 5943 |"
+        },
         gitHub: {
-            text: "GitHub |",
+            text: " GitHub |",
             href: "https://github.com/alvaroluna",
         },
         linkedIn: {
@@ -57,26 +50,11 @@ function Footer() {
         aTag.text(footerData[key].text);
 
         // append <a> to <p>
-        pTopTag.append(aTag);
-    }
-
-    // create <a> tags using footerData2
-    for (var key in footerData2) {
-
-        var aTag2 = $("<a>");
-        if (footerData2[key].href) {
-            aTag2.attr("href", footerData2[key].href);
-            aTag2.attr("target", "_blank");
-        }
-        aTag2.text(footerData2[key].text);
-
-        // append <a> to <p>
-        pBtmTag.append(aTag2);
+        pTag.append(aTag);
     }
 
     // append <p> tags to <div> tag
-    divTag.append(pTopTag);
-    divTag.append(pBtmTag);
+    divTag.append(pTag);
 
     // append <div> to <footer>
     footerTag.append(divTag)

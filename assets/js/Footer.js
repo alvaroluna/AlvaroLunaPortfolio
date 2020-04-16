@@ -1,15 +1,23 @@
 function Footer() {
-    // navigation tag
-    var navTag = $("<nav>");
-    navTag.addClass("navbar navbar-expand-lg navbar-light");
+    // <footer> tag
+    var footerTag = $("<footer>");
+    footerTag.addClass("py-5 fixed-bottom")
 
-    // Alvaro 'Logo' in <a> tag
-    var alvaroTag = $("<a>");
-    alvaroTag.text("Alvaro Luna")
-    alvaroTag.addClass("navbar-brand");
-    alvaroTag.attr("href", "index.html");
+    // <div> tag
+    var divTag = $("<p>");
+    divTag.addClass("container");
 
-    // standard upload options
+    // first <p> tag
+    var pTopTag = $("<p>");
+    pTopTag.addClass("m-0 text-center small");
+    pTopTag.attr("id", "insertTopRowFooter");
+
+    var pBtmTag = $("<p>");
+    pBtmTag.addClass("m-0 text-center small");
+    pBtmTag.attr("id", "insertBtmRowFooter");
+
+
+    // data to populate <a> tags
     var footerData = {
         name: {
             text: "Alvaro Luna |"
@@ -38,7 +46,7 @@ function Footer() {
         },
     };
 
-    // append bottom row data
+    // create <a> tags using footerData
     for (var key in footerData) {
 
         var aTag = $("<a>");
@@ -49,10 +57,10 @@ function Footer() {
         aTag.text(footerData[key].text);
 
         // append <a> to <p>
-        $("#insertTopRowFooter").append(aTag);
+        pTopTag.append(aTag);
     }
 
-    // append bottom row data
+    // create <a> tags using footerData2
     for (var key in footerData2) {
 
         var aTag2 = $("<a>");
@@ -63,8 +71,18 @@ function Footer() {
         aTag2.text(footerData2[key].text);
 
         // append <a> to <p>
-        $("#insertBtmRowFooter").append(aTag2);
+        pBtmTag.append(aTag2);
     }
+
+    // append <p> tags to <div> tag
+    divTag.append(pTopTag);
+    divTag.append(pBtmTag);
+
+    // append <div> to <footer>
+    footerTag.append(divTag)
+
+    // append <footer> to <div class="col-md-6" id="insertFooter">
+    $("#insertFooter").append(footerTag);
 
 }
 

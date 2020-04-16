@@ -1,42 +1,7 @@
 function NavigationBar() {
-    // navigation tag
-    var navTag = $("<nav>");
-    navTag.addClass("navbar navbar-expand-lg navbar-light");
-
-    // Alvaro 'Logo' in <a> tag
-    var alvaroTag = $("<a>");
-    alvaroTag.text("Obj.App")
-    alvaroTag.addClass("navbar-brand");
-    alvaroTag.attr("id", "logo")
-    alvaroTag.attr("href", "index.html");
-
-    // button behavior settings
-    var button = $("<button>");
-    button.addClass("navbar-toggler");
-    button.attr("type", "button");
-    button.attr("data-toggle", "collapse");
-    button.attr("data-target", "#navbarSupportedContent");
-    button.attr("aria-controls", "navbarSupportedContent");
-    button.attr("aria-expanded", "false");
-    button.attr("aria-label", "Toggle navigation");
-
-    // span tag embedded in button behavior settings above
-    var buttonEmbSpan = $("<span>");
-    buttonEmbSpan.addClass("navbar-toggler-icon");
-
-    // append span to button settings
-    button.append(buttonEmbSpan);
-
-    // html links
-    var divTagLinks = $("<div>");
-    divTagLinks.addClass("collapse navbar-collapse order-3");
-    divTagLinks.attr("id", "navbarSupportedContent");
-
-    // unsorted list for html links
-    var unsortedListTag = $("<ul>");
-    unsortedListTag.addClass("navbar-nav mr-auto");
-
-    // standard upload options
+    //////////////////
+    // NAV BAR DATA //
+    //////////////////
     var navLinksObj = {
         aboutMe: {
             text: "About Me",
@@ -55,6 +20,45 @@ function NavigationBar() {
         },
     };
 
+
+    //////////////////////
+    // CREATE HTML TAGS //
+    //////////////////////
+
+    // navigation tag
+    var navTag = $("<nav>");
+    navTag.addClass("navbar navbar-expand-lg navbar-light LOGO");
+
+    // Alvaro 'Logo' in <a> tag
+    var aTagLOGO = $("<a>");
+    aTagLOGO.text("Obj.App")
+    aTagLOGO.addClass("navbar-brand LOGO");
+    aTagLOGO.attr("id", "logo")
+    aTagLOGO.attr("href", "index.html");
+
+    // button behavior settings
+    var button = $("<button>");
+    button.addClass("navbar-toggler");
+    button.attr("type", "button");
+    button.attr("data-toggle", "collapse");
+    button.attr("data-target", "#navbarSupportedContent");
+    button.attr("aria-controls", "navbarSupportedContent");
+    button.attr("aria-expanded", "false");
+    button.attr("aria-label", "Toggle navigation");
+
+    // span tag embedded in button behavior settings above
+    var buttonEmbSpan = $("<span>");
+    buttonEmbSpan.addClass("navbar-toggler-icon");
+
+    // html links
+    var divTagLinks = $("<div>");
+    divTagLinks.addClass("collapse navbar-collapse order-3");
+    divTagLinks.attr("id", "navbarSupportedContent");
+
+    // unsorted list for html links
+    var unsortedListTag = $("<ul>");
+    unsortedListTag.addClass("navbar-nav mr-auto");
+
     // loop through nav links to create an li tag for each, append the total
     for (var key in navLinksObj) {
         console.log(navLinksObj[key].text);
@@ -67,12 +71,14 @@ function NavigationBar() {
         aTag.attr("href", navLinksObj[key].url);
         aTag.text(navLinksObj[key].text);
 
-        var aEmbeddedSpanTag = $("<span>");
-        aEmbeddedSpanTag.addClass("sr-only");
-        aEmbeddedSpanTag.text("(current)");
+        if (navLinksObj[key].url === "portfolio.html") {
+            var aEmbeddedSpanTag = $("<span>");
+            aEmbeddedSpanTag.addClass("sr-only");
+            aEmbeddedSpanTag.text("(current)");
 
-        // append <span> tag to <a> tag
-        aTag.append(aEmbeddedSpanTag);
+            // append <span> tag to <a> tag
+            aTag.append(aEmbeddedSpanTag);
+        }
 
         // append <a> tag to <li> tag
         listItemTag.append(aTag);
@@ -81,18 +87,25 @@ function NavigationBar() {
         unsortedListTag.append(listItemTag);
     }
 
+
+    ///////////////////////////////////////////
+    // MOST OF THE APPENDING UPSTREAM TO DOM //
+    ///////////////////////////////////////////
+
+    // append span to button settings
+    button.append(buttonEmbSpan);
+
     // append <ul> tag to <div> tag
     divTagLinks.append(unsortedListTag);
 
     // append <a>, <button>, and <div> tags to <nav> tag
-    navTag.append(alvaroTag);
+    navTag.append(aTagLOGO);
     navTag.append(button);
     navTag.append(divTagLinks);
 
     // write new html to the DOM
     $("#insertNavBar").append(navTag);
 }
-
 
 NavigationBar();
 

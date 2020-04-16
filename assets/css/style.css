@@ -33,6 +33,12 @@ body {
   position: relative;
   text-align: center;
 }
+
+.LOGO {
+  font-weight: bolder;
+  padding-left: 0em;
+}
+
 .nav-link {
   font-family: var(--main-font);
   margin: 20px;
@@ -65,15 +71,18 @@ a {
   color: black;
   text-decoration: none;
 }
+
 #aboutLink {
   float: left;
   width: 100px;
 }
+
 #portfolioLink {
   float: left;
   width: 100px;
   /* background: grey; */
 }
+
 #contactLink {
   float: left;
   width: 100px;

@@ -1,7 +1,7 @@
 function Footer() {
     // <footer> tag
     var footerTag = $("<footer>");
-    footerTag.addClass("py-5 fixed-bottom")
+    footerTag.addClass("py-5 fixed-bottom"); // fixed-bottom was here
 
     // <div> tag
     var divTag = $("<p>");

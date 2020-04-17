@@ -47,10 +47,11 @@ function NavigationBar() {
 
     // Alvaro 'Logo' in <a> tag
     var aTagLOGO = $("<a>");
-    aTagLOGO.text("Obj.App")
+    // aTagLOGO.text("OBJ.APP")
+    aTagLOGO.text("A.LUNA")
     aTagLOGO.addClass("navbar-brand LOGO");
     aTagLOGO.attr("id", "logo")
-    aTagLOGO.attr("href", "index.html");
+    aTagLOGO.attr("href", "home.html");
 
     // button behavior settings
     var button = $("<button>");

@@ -24,11 +24,17 @@ body {
   background-color: white;
 }
 
+hr {
+  position: relative;
+  bottom: 7px;
+  border-color: rgb(var(--color-nameBlock));
+  background: rgb(var(--color-nameBlock));
+  border-width: 0.5px;
+}
+
 /*################*/
 /* NAVIGATION BAR */
 /*################*/
-
-/* navigation bar links */
 #navbarSupportedContent {
   position: relative;
   text-align: center;
@@ -43,27 +49,6 @@ body {
   font-family: var(--main-font);
   margin: 20px;
   width: 100px;
-}
-
-hr {
-  position: relative;
-  bottom: 7px;
-  border-color: rgb(var(--color-nameBlock));
-  background: rgb(var(--color-nameBlock));
-  border-width: 0.5px;
-}
-
-/* name icon in header */
-#nameBlock {
-  font-weight: bold;
-  font-size: x-large;
-  text-align: center;
-  color: white;
-  width: 200px;
-  background: rgb(var(--color-nameBlock));
-  padding-top: 5px;
-  padding-bottom: 5px;
-  float: left;
 }
 
 /* link settings */
@@ -86,8 +71,6 @@ a {
 #contactLink {
   float: left;
   width: 100px;
-  /* clear: both; */
-  /* background: grey; */
 }
 
 #footerBreakLine {
@@ -102,9 +85,9 @@ a {
   font-weight: bold;
 }
 
-/*########*/
-/* FOOTER */
-/*########*/
+/*##############*/
+/* FOOTER STYLE */
+/*##############*/
 footer {
   position: absolute;
   bottom: 0;
@@ -114,4 +97,10 @@ footer {
   font-family: var(--main-font);
   font-size: x-small;
   text-align: center;
+}
+
+/* this covers the content below the footer */
+/* makes it look like it slides below footer */
+#footerBackground {
+  background: white;
 }
